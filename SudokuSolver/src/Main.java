@@ -13,9 +13,9 @@ public class Main {
         };
         printBoard(board);
         if (canSolveBoard(board))
-            System.out.println("Solved Succesfully!");
+            System.out.println("Solved Succesfully");
         else
-            System.out.println("It is impossible!");
+            System.out.println("It is impossible");
     }
     public static void printBoard(int[][] board){
         StringBuffer buf = new StringBuffer();
