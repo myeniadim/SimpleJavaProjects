@@ -1,60 +1,63 @@
-# Description
+# Bank Application
 
 
-This project is a simple banking application developed using object-oriented programming with Java.
+## Table of Contents
 
-You can login to the application as an Admin or a Customer. 
-
-Admins can:
-```
-See their permissions
-Change their password
-Register a new admin
-See an admin's permissions
-Add permission to an admin
-Register a new customer
-Check a customer's balance
-Deposit money into a customer's account
-Withdraw money from a customer's account
-```
-Customers can:
-```
-Check their balance
-Deposit money into their account
-Withdraw money from their account
-See their previous transactions
-Change their password
-```
-# Classes
-
-There are three classes: Person, Admin, and Customer. Admin and Customer are subclasses of the Person class. The Person class has the following properties: name, surname, id, and password. The Admin class has the following property: permissions. The Customer class has the following properties: balance and previous transfer.These properties are stored in YAML files. For example, when a new admin is created, a file named 'admin's id'.yml is created, and the properties are written into it.
-
-```yaml
-#100000.yml
-password: 1234
-surname: admin
-permissions:
-- customerOperations
-- registerAdmin
-- addPermission
-- seePermission
-name: admin
-```
+- [About](#about)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
 
 
-## Installation
+## About
 
-To clone the repository, open a terminal and navigate to the directory where you want to clone the repository. Then, run the following command:
+The Bank Application is a Java-based command-line program that simulates a basic banking system. This application allows both administrators and customers to interact with the bank's services, including managing accounts, performing transactions, and maintaining permissions.
 
-```bash
-git clone https://github.com/myeniadim/SimpleJavaProjects.git
-```
+## Features
+
+- **Admin and Customer Access:** The application provides separate interfaces for administrators and customers, each with their own set of functionalities.
+
+- **User Authentication:** Users can log in with their account IDs and passwords to access their accounts.
+
+- **Admin Operations:** Admins can view their permissions, change their passwords, register new admins, view permissions of other admins, add permissions to other admins, and register new customers.
+
+- **Customer Operations:** Customers can check their account balances, deposit and withdraw money, view their previous transactions, and change their passwords.
+
+- **Secure Password Generation:** The application generates secure, random passwords for new users.
+
+- **YAML Data Storage:** User data is stored in YAML files for easy retrieval and management.
+
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Java SE Development Kit (JDK) installed.
+- SnakeYAML library for YAML file handling.
+
+## Getting Started
+
+To get started with the Bank Application, follow these steps:
+
+1. Clone the repository to your local machine using the following command:
+
+   ```shell
+   git clone (https://github.com/myeniadim/SimpleJavaProjects.git)
+   ```
+
+2. Compile the Java code using your preferred Java compiler.
+
+3. Run the `Main` class to start the application.
 
 ## Usage
 
-Enter the following directory:
+Follow these steps to use the Bank Application:
 
-```bash
-SimpleJavaProjects\BankAplication\src
-```
-Then, open the Main.java file and run the code.
+1. Launch the application by running `Main.java`.
+
+2. Choose the appropriate user type (admin or customer) and follow the prompts(For admins default id:100000 password:1234).
+
+3. Perform various banking operations, such as viewing balances, making transactions, and managing accounts.
+
+4. Exit the application when you're done.
+
