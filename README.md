@@ -31,7 +31,7 @@ The Bank Application is a command-line program that simulates a basic banking sy
 - Secure Password Generation
 - Data Storage with YAML
 
-[Learn more about the Bank Application](Bank-Application/README.md)
+[Learn more about the Bank Application](BankApplication/README.md)
 
 ### Sudoku Solver
 
